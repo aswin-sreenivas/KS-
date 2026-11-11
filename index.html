@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K S Associates | Engineering Construction & Surveying</title>
+    <meta name="description" content="K S Associates provides construction, surveying and 3D architectural design services in Feroke, Kozhikode, Kerala. Certified RCC works, land surveying, and architectural visualisations." />
+    <meta name="author" content="K S Associates" />
+    <meta name="keywords" content="KS Associates, K S Associates, KS Associates Feroke, KS Associates Calicut, KS Associates Kozhikode, KS Associates Kerala, K S Associates Engineering Construction & Surveying, Civil Engineering Feroke, Land Surveying Calicut, 3D Architectural Design Kozhikode, RCC construction Feroke" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
+    <!-- Geo Location Metadata for Google Local Search Engine Dominance (Feroke, Calicut) -->
+    <meta name="geo.region" content="IN-KL" />
+    <meta name="geo.placename" content="Feroke, Calicut, Kerala, India" />
+    <meta name="geo.position" content="11.1718;75.8458" />
+    <meta name="ICBM" content="11.1718, 75.8458" />
+    
+    <!-- XML Sitemap Link for Search Engines -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+    <!-- Canonical URL Link & Dynamic Section Resolver for Search Engines -->
+    <link rel="canonical" id="canonical-url" href="https://ksassociates.co.in/" />
+    <meta property="og:url" id="og-url" content="https://ksassociates.co.in/" />
+
+    <!-- Canonical URL Placeholder Script: Dynamically resolves and maintains the canonical URL for each section (home, about, services, projects, contact) -->
+    <script>
+      (function() {
+        try {
+          var canonicalLink = document.getElementById('canonical-url');
+          var ogUrlMeta = document.getElementById('og-url');
+          if (!canonicalLink) return;
+
+          // Base origin placeholder: defaults to authoritative domain or current runtime host
+          var defaultBase = 'https://ksassociates.co.in';
+          var origin = (window.location && window.location.origin && window.location.origin !== 'null')
+            ? window.location.origin
+            : defaultBase;
+
+          // Recognized page sections across the application
+          var validSections = ['home', 'about', 'services', 'projects', 'contact'];
+
+          // Determine current section from hash routing or path
+          var path = (window.location.pathname || '').replace(/\/+$/, '');
+          var rawHash = (window.location.hash || '').replace(/^#\/?/, '').toLowerCase();
+          var hashSection = rawHash.split('?')[0].split('/')[0];
+
+          var targetSection = '';
+          if (validSections.indexOf(hashSection) !== -1) {
+            targetSection = hashSection;
+          } else {
+            var pathSegment = path.replace(/^\//, '').toLowerCase();
+            if (validSections.indexOf(pathSegment) !== -1) {
+              targetSection = pathSegment;
+            }
+          }
+
+          // Build standardized canonical URL for search engine indexing
+          var resolvedCanonical = origin + '/';
+          if (targetSection && targetSection !== 'home') {
+            resolvedCanonical = origin + '/#' + targetSection;
+          }
+
+          // Preserve project detail canonical if query param exists
+          if (window.location.search && (targetSection === 'projects' || hashSection === 'projects')) {
+            resolvedCanonical += window.location.search;
+          }
+
+          // Update tags immediately during initial HTML parse before React hydration
+          canonicalLink.setAttribute('href', resolvedCanonical);
+          if (ogUrlMeta) {
+            ogUrlMeta.setAttribute('content', resolvedCanonical);
+          }
+        } catch (e) {
+          // Graceful fallback to default base canonical URL
+        }
+      })();
+    </script>
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp (Default / Home) -->
+    <meta property="og:site_name" content="K S Associates – Engineering Construction & Surveying" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="K S Associates | Engineering Construction & Surveying" />
+    <meta property="og:description" content="Civil engineering practice, RCC structural construction, precision land surveying, and photorealistic 3D architectural design in Feroke, Calicut." />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:secure_url" content="/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="K S Associates – Architectural Visualization and Structural Engineering" />
+
+    <!-- Twitter / X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="K S Associates | Engineering Construction & Surveying" />
+    <meta name="twitter:description" content="Civil engineering practice, RCC structural construction, precision land surveying, and photorealistic 3D architectural design in Feroke, Calicut." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+    <meta name="twitter:image:alt" content="K S Associates – Architectural Visualization and Structural Engineering" />
+
+    <!-- Open Graph Section & Service Page Type Metadata References -->
+    <meta property="business:contact_data:street_address" content="FM 5/995, 1st Floor, Farook Hospital Complex, P.O. Feroke" />
+    <meta property="business:contact_data:locality" content="Calicut, Kozhikode" />
+    <meta property="business:contact_data:region" content="Kerala" />
+    <meta property="business:contact_data:postal_code" content="673631" />
+    <meta property="business:contact_data:country_name" content="India" />
+    <meta property="business:contact_data:email" content="ksassociatesferoke@gmail.com" />
+    <meta property="business:contact_data:phone_number" content="+919207446666" />
+
+    <!-- Page Type Alternate Open Graph Card Assets for Social Sharing -->
+    <!-- Construction: /og-construction.jpg | Surveying: /og-surveying.jpg | 3D Design: /og-3ddesign.jpg | Projects: /og-projects.jpg -->
+    <meta name="theme-color" content="#343A24" />
+    
+    <!-- SEO & Performance Optimized Fonts: Poppins + Inter + Cinzel Decorative (Entry Attraction Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Comprehensive Structured Data for Google Knowledge Graph & Local Pack -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["GeneralContractor", "ProfessionalService", "LocalBusiness"],
+          "@id": "https://ksassociates.co.in/#organization",
+          "name": "K S Associates",
+          "alternateName": [
+            "KS Associates",
+            "K.S. Associates",
+            "KS Associates Feroke",
+            "KS Associates Calicut",
+            "KS Associates Kozhikode",
+            "KS Associates Kerala",
+            "K S Associates Engineering Construction & Surveying",
+            "KS ASSOCIATES ENGINEERING CONSTRUCTION AND SURVEY"
+          ],
+          "slogan": "Building Trust, Creating Landmarks",
+          "url": "https://ksassociates.co.in/",
+          "logo": "https://ksassociates.co.in/og-image.jpg",
+          "image": [
+            "https://ksassociates.co.in/og-image.jpg",
+            "https://ksassociates.co.in/og-construction.jpg",
+            "https://ksassociates.co.in/og-surveying.jpg",
+            "https://ksassociates.co.in/og-3ddesign.jpg",
+            "https://ksassociates.co.in/og-projects.jpg"
+          ],
+          "description": "We are a civil engineering and construction company committed to delivering high-quality construction solutions with excellence, reliability and professionalism. Planning, designing and executing construction projects in Feroke, Calicut, Kerala.",
+          "telephone": "+919207446666",
+          "email": "ksassociatesferoke@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "FM 5/995, 1st Floor, Farook Hospital Complex, P.O. Feroke",
+            "addressLocality": "Feroke, Calicut, Kozhikode",
+            "addressRegion": "Kerala",
+            "postalCode": "673631",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 11.1718,
+            "longitude": 75.8458
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "taxID": "32GDMPS7866H2ZR",
+          "priceRange": "₹₹",
+          "currenciesAccepted": "INR",
+          "paymentAccepted": "Cash, Cheque, Bank Transfer, UPI",
+          "areaServed": [
+            { "@type": "City", "name": "Feroke" },
+            { "@type": "City", "name": "Kozhikode" },
+            { "@type": "City", "name": "Calicut" },
+            { "@type": "City", "name": "Malappuram" },
+            { "@type": "AdministrativeArea", "name": "Kerala" }
+          ],
+          "knowsAbout": [
+            "Building Construction & RCC Works",
+            "Total Station Precision Land Surveying",
+            "3D Architectural Visualization & CAD Modeling",
+            "Structural Engineering Subcontracts",
+            "Commercial & Residential Construction"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Engineering & Construction Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Building Construction & RCC Structural Works",
+                  "description": "Civil contracting, structural frame fabrication, RCC casting, and turnkey construction."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Total Station Land Surveying",
+                  "description": "Cadastral boundary demarcation, contour topography mapping, and construction setting out."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "3D Architectural Design & CAD Visualisation",
+                  "description": "Photorealistic exterior elevations, municipal approval blueprints, and 3D walkthrough models."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ksassociates.co.in/#website",
+          "url": "https://ksassociates.co.in/",
+          "name": "K S Associates",
+          "alternateName": "KS Associates",
+          "description": "Official website of K S Associates – Engineering Construction & Surveying, Feroke, Calicut",
+          "publisher": {
+            "@id": "https://ksassociates.co.in/#organization"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://ksassociates.co.in/#navigation",
+          "name": [
+            "Home",
+            "About Our Practice",
+            "Core Services",
+            "Architectural Projects",
+            "Contact Office"
+          ],
+          "url": [
+            "https://ksassociates.co.in/",
+            "https://ksassociates.co.in/#about",
+            "https://ksassociates.co.in/#services",
+            "https://ksassociates.co.in/#projects",
+            "https://ksassociates.co.in/#contact"
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#F5F4EF] text-[#292B27] antialiased selection:bg-[#C6A65B] selection:text-[#343A24]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

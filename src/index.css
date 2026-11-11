@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-numeric: 'Arial Black', -apple-system, BlinkMacSystemFont, "Arial Bold", Gadget, sans-serif;
+  --font-mono: 'Arial Black', -apple-system, BlinkMacSystemFont, "Arial Bold", Gadget, sans-serif;
+  --font-fancy: 'Cinzel Decorative', 'Cinzel', 'Playfair Display', Georgia, serif;
+  
+  --color-brand-olive: #343A24;
+  --color-brand-olive-dark: #242918;
+  --color-brand-gold: #C6A65B;
+  --color-brand-gold-muted: #B8974D;
+  --color-brand-white: #FFFFFF;
+  --color-brand-ivory: #F5F4EF;
+  --color-brand-ivory-dark: #ECEAE2;
+  --color-brand-charcoal: #292B27;
+  --color-brand-charcoal-light: #4A4D46;
+  --color-brand-muted-grey: #77786F;
+  --color-brand-border: rgba(41, 43, 39, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #F5F4EF;
+  color: #292B27;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.015em;
+}
+
+/* Solid, un-fussy Arial Black numerical font for metrics, step badges, numbers, and stats */
+.font-numeric,
+.font-mono,
+[data-numeric] {
+  font-family: 'Arial Black', -apple-system, BlinkMacSystemFont, "Arial Bold", Gadget, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Entry attraction fancy display font specifically for hero headline */
+.font-fancy-entry {
+  font-family: 'Cinzel Decorative', 'Cinzel', 'Playfair Display', Georgia, serif;
+  letter-spacing: 0.02em;
+}
+
+/* Restrained Corporate Container */
+.corporate-container {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .corporate-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .corporate-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+/* Subtle, functional scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F4EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #77786F;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #343A24;
+}
