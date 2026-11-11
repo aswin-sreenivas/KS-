@@ -182,7 +182,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <span>Feroke, Calicut, Kerala</span>
             <span aria-hidden="true" className="text-white/20">·</span>
             <span>
-              Website built by <strong className="text-[#C6A65B] font-medium">Gopika MK</strong>
+              Website built by <strong className="text-[#C6A65B] font-medium">ShadowStack.web</strong>
             </span>
           </div>
         </div>
