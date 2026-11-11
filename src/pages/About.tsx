@@ -17,8 +17,7 @@ import {
   CheckCircle2,
   ShieldCheck,
   Award,
-  FileCheck,
-  Download
+  FileCheck
 } from 'lucide-react';
 
 interface AboutProps {
@@ -332,104 +331,6 @@ export const About: React.FC<AboutProps> = ({ onNavigate, onOpenContactModal }) 
                   <span className="text-white">Tuneri, Kozhikode, Kerala</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* SECTION: Official Brand Identity & Transparent Logo Assets */}
-        <section className="bg-white p-8 sm:p-10 rounded-[2px] border border-[#292B27]/10 shadow-sm space-y-8">
-          <div className="space-y-2">
-            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[#C6A65B]">
-              Official Identity Assets
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-heading font-semibold text-[#343A24]">
-              K S Associates Official Logo Assets (Transparent Background PNG)
-            </h2>
-            <p className="text-sm text-[#4A4D46] max-w-3xl leading-relaxed">
-              Official high-resolution transparent background PNG assets extracted and calibrated from certified company documents. Suitable for architectural plans, subcontract letterheads, digital media, and signage.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Card 1: Dark Transparent Logo */}
-            <div className="p-6 rounded-[2px] border border-[#292B27]/10 bg-[#F5F4EF] flex flex-col justify-between space-y-5">
-              <div className="space-y-3">
-                <div className="text-xs font-semibold uppercase tracking-wider text-[#343A24]">
-                  Charcoal & White Bevel (Dark Variant)
-                </div>
-                <div className="h-24 flex items-center justify-center p-3 bg-white/70 border border-[#292B27]/8 rounded-[2px]">
-                  <img
-                    src="/ks_associates_logo_bg.png"
-                    alt="K S Associates Dark Logo Transparent PNG"
-                    className="max-h-16 w-auto object-contain"
-                  />
-                </div>
-                <p className="text-[11px] text-[#4A4D46] leading-relaxed">
-                  Transparent background PNG formatted for white, ivory, and light architectural backgrounds.
-                </p>
-              </div>
-              <a
-                href="/ks_associates_logo_bg.png"
-                download="KS_Associates_Logo_Dark_Transparent.png"
-                className="w-full py-2 bg-[#343A24] text-white hover:bg-[#242918] text-xs font-medium uppercase tracking-wider rounded-[2px] transition-colors flex items-center justify-center gap-2"
-              >
-                <Download className="w-3.5 h-3.5 text-[#C6A65B]" />
-                <span>Download Dark PNG</span>
-              </a>
-            </div>
-
-            {/* Card 2: White & Gold Transparent Logo */}
-            <div className="p-6 rounded-[2px] border border-[#292B27]/10 bg-[#343A24] text-white flex flex-col justify-between space-y-5">
-              <div className="space-y-3">
-                <div className="text-xs font-semibold uppercase tracking-wider text-[#C6A65B]">
-                  White & Muted Gold (Light Variant)
-                </div>
-                <div className="h-24 flex items-center justify-center p-3 bg-[#242918] border border-white/10 rounded-[2px]">
-                  <img
-                    src="/ks_associates_logo_white.png"
-                    alt="K S Associates White Logo Transparent PNG"
-                    className="max-h-16 w-auto object-contain"
-                  />
-                </div>
-                <p className="text-[11px] text-white/75 leading-relaxed">
-                  Transparent background PNG calibrated for dark olive headers, dark hero overlays, and deep charcoal surfaces.
-                </p>
-              </div>
-              <a
-                href="/ks_associates_logo_white.png"
-                download="KS_Associates_Logo_White_Transparent.png"
-                className="w-full py-2 bg-[#C6A65B] text-[#292B27] hover:bg-[#DECA8D] text-xs font-semibold uppercase tracking-wider rounded-[2px] transition-colors flex items-center justify-center gap-2"
-              >
-                <Download className="w-3.5 h-3.5" />
-                <span>Download White PNG</span>
-              </a>
-            </div>
-
-            {/* Card 3: Surveyor Compass Emblem */}
-            <div className="p-6 rounded-[2px] border border-[#292B27]/10 bg-[#F5F4EF] flex flex-col justify-between space-y-5">
-              <div className="space-y-3">
-                <div className="text-xs font-semibold uppercase tracking-wider text-[#343A24]">
-                  Surveyor Compass Rose Emblem
-                </div>
-                <div className="h-24 flex items-center justify-center p-3 bg-white/70 border border-[#292B27]/8 rounded-[2px]">
-                  <img
-                    src="/ks_associates_emblem.png"
-                    alt="K S Associates Compass Emblem Transparent PNG"
-                    className="max-h-16 w-auto object-contain"
-                  />
-                </div>
-                <p className="text-[11px] text-[#4A4D46] leading-relaxed">
-                  Transparent circular seal depicting the surveyor compass rose with architectural high-rise buildings and residential roof.
-                </p>
-              </div>
-              <a
-                href="/ks_associates_emblem.png"
-                download="KS_Associates_Emblem_Transparent.png"
-                className="w-full py-2 bg-[#343A24] text-white hover:bg-[#242918] text-xs font-medium uppercase tracking-wider rounded-[2px] transition-colors flex items-center justify-center gap-2"
-              >
-                <Download className="w-3.5 h-3.5 text-[#C6A65B]" />
-                <span>Download Emblem PNG</span>
-              </a>
             </div>
           </div>
         </section>
